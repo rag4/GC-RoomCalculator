@@ -6,16 +6,15 @@ namespace Lab_2___Room_Calculator
     {
         static void Main(string[] args)
         {
-            //FLAG FOR LOOP
-            char checkFlag = 'y';
+            //INTRO
+            Console.WriteLine("Grand Circus -- Lab 2 -- Ramon Guarnes's Room Calculator: ");
+
+            Console.WriteLine();
+
+            char checkFlag = 'y';   //FLAG FOR LOOP
 
             do
             {
-                //INTRO
-                Console.WriteLine("Grand Circus -- Lab 2 -- Ramon Guarnes's Room Calculator: ");
-
-                Console.WriteLine();
-
                 //USER INPUTS LENGTH
                 Console.WriteLine("\nEnter Length: ");
                 string input = Console.ReadLine();
