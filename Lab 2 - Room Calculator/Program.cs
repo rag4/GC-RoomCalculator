@@ -15,25 +15,36 @@ namespace Lab_2___Room_Calculator
 
             do
             {
+                float length, width, heigth, area, perimeter, volume;
+
                 //USER INPUTS LENGTH
                 Console.WriteLine("\nEnter Length: ");
                 string input = Console.ReadLine();
-                float length = float.Parse(input);
+                length = float.Parse(input);
 
                 //USER INPUTS WIDTH
                 Console.WriteLine("\nEnter Width: ");
                 input = Console.ReadLine();
-                float width = float.Parse(input);
+                width = float.Parse(input);
+
+                //USER INPUTS HEIGTH
+                Console.WriteLine("\nEnter Heigth: ");
+                input = Console.ReadLine();
+                heigth = float.Parse(input);
 
                 Console.WriteLine();
 
                 //PROGRAM OUTPUTS AREA (l*w)
-                float area = length * width;
+                area = length * width;
                 Console.WriteLine("Area:" + area);
 
                 //PROGRAM OUTPUTS PERIMETER (2l + 2w)
-                float perimeter = (2 * length) + (2 * width);
+                perimeter = (2 * length) + (2 * width);
                 Console.WriteLine("Perimeter:" + perimeter);
+
+                //PROGRAM OUTPUTS VOLUME (a * h)
+                volume = area * heigth;
+                Console.WriteLine("Volume:" + volume);
 
                 Console.WriteLine();
 
